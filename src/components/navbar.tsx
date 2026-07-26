@@ -34,7 +34,7 @@ export function Navbar() {
     >
       <nav className="section-container flex h-16 items-center justify-between">
         <a href="#top" className="font-mono text-sm font-semibold tracking-tight">
-          m<span className="text-gradient">.anwar</span>
+          <span className="text-gradient">M.ANWAR</span>
         </a>
 
         <div className="hidden items-center gap-7 lg:flex">
