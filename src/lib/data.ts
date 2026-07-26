@@ -17,7 +17,7 @@ export const siteConfig = {
   location: "Lahore, Pakistan",
   github: "https://github.com/M-Anwar921",
   githubUser: "M-Anwar921",
-  linkedin: "https://linkedin.com/in/muhammad-anwar",
+  linkedin: "https://www.linkedin.com/in/muhammad-anwar-12aa2130b/",
   resumeUrl: "/resume.pdf",
   url: "https://muhammadanwar.dev",
 };
