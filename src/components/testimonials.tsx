@@ -8,7 +8,7 @@ export function Testimonials() {
     <section className="border-t border-border py-28">
       <div className="section-container">
         <Reveal>
-          <p className="mb-3 font-mono text-sm text-brand-blue dark:text-brand-cyan">
+          <p className="mb-3 font-mono text-base text-brand-blue dark:text-brand-cyan">
             07 · Testimonials
           </p>
           <h2 className="mb-4 max-w-2xl text-3xl font-bold tracking-tight sm:text-4xl">

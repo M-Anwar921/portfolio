@@ -12,7 +12,7 @@ export function ThemeToggle() {
   React.useEffect(() => setMounted(true), []);
 
   if (!mounted) {
-    return <div className="h-10 w-10" aria-hidden />;
+    return <div className="h-20 w-20" aria-hidden />;
   }
 
   return (

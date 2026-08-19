@@ -145,7 +145,7 @@ export function Hero() {
   return (
     <section
       id="top"
-      className="relative flex min-h-[100svh] items-center overflow-hidden pt-16"
+      className="relative flex min-h-[100svh] items-center overflow-hidden pt-20"
     >
       <div className="absolute inset-0 bg-gradient-mesh bg-[length:200%_200%] animate-gradient-shift" aria-hidden />
       <FloatingParticles />
@@ -156,7 +156,7 @@ export function Hero() {
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className="mb-4 font-mono text-sm text-brand-cyan"
+            className="mb-4 font-mono text-lg text-brand-cyan"
           >
             Hi, my name is
           </motion.p>

@@ -2,9 +2,10 @@
 
 import * as React from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Github, Linkedin } from "lucide-react";
 import { ThemeToggle } from "@/components/theme-toggle";
 import { Button } from "@/components/ui/button";
+import { siteConfig } from "@/lib/data";
 
 const links = [
   { href: "#about", label: "About" },
@@ -32,8 +33,8 @@ export function Navbar() {
         scrolled ? "glass shadow-sm" : "bg-transparent"
       }`}
     >
-      <nav className="section-container flex h-16 items-center justify-between">
-        <a href="#top" className="font-mono text-sm font-semibold tracking-tight">
+      <nav className="section-container flex h-24 items-center justify-between">
+        <a href="#top" className="font-mono text-3xl font-semibold tracking-tight">
           <span className="text-gradient">M.ANWAR</span>
         </a>
 
@@ -42,17 +43,35 @@ export function Navbar() {
             <a
               key={l.href}
               href={l.href}
-              className="text-sm text-muted-foreground transition-colors hover:text-foreground"
+              className="text-lg text-muted-foreground transition-colors hover:text-foreground"
             >
               {l.label}
             </a>
           ))}
         </div>
 
-        <div className="hidden items-center gap-3 lg:flex">
+        <div className="hidden items-center gap-4 lg:flex">
+          <a
+           href={siteConfig.github}
+           target="_blank"
+           rel="noopener noreferrer"
+           aria-label="GitHub"
+           className="text-muted-foreground transition-colors hover:text-foreground"
+          >
+          <Github className="h-5 w-5" />
+          </a>
+          <a
+           href={siteConfig.linkedin}
+           target="_blank"
+           rel="noopener noreferrer"
+           aria-label="LinkedIn"
+           className="text-muted-foreground transition-colors hover:text-foreground"
+          >
+           <Linkedin className="h-5 w-5" />
+           </a>
           <ThemeToggle />
           <Button size="sm" onClick={() => (window.location.hash = "#contact")}>
-            Contact Me
+           Contact Me
           </Button>
         </div>
 
