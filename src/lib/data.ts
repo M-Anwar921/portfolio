@@ -228,6 +228,87 @@ export const projects: Project[] = [
     tech: ["Python", "SQL"],
     highlights: ["User authentication", "Report generation"],
   },
+  {
+  slug: "coverai",
+  title: "CoverAI",
+  description:
+    "A genuinely complete, fully deployed e-commerce platform — built for personal use to sharpen production-grade MERN skills.",
+  details:
+    "A full-stack e-commerce website built end-to-end with the MERN stack. Built primarily for personal use, it covers the full commerce flow rather than a stripped-down demo, and is deployed live rather than left as a local project.",
+  category: "Full-Stack",
+  tech: ["MongoDB", "Express", "React", "Node.js"],
+  highlights: ["Deployed on Vercel (frontend) + Railway (backend)", "Full commerce flow, built for real use"],
+  demo: "ADD_YOUR_VERCEL_URL_HERE",
+  featured: true,
+},
+{
+  slug: "pos-website",
+  title: "Point of Sale (POS) Website",
+  description:
+    "A complete, deployed point-of-sale web app built to sharpen MERN stack skills through a real, non-trivial use case.",
+  details:
+    "A full point-of-sale system built with the MERN stack as a deliberate skill-building project — POS systems touch inventory, transactions, and real-time state, making them a solid stress test for full-stack fundamentals.",
+  category: "Full-Stack",
+  tech: ["MongoDB", "Express", "React", "Node.js"],
+  highlights: ["Deployed on Vercel + Railway", "Built specifically to deepen MERN proficiency"],
+  demo: "ADD_YOUR_VERCEL_URL_HERE",
+  featured: true,
+},
+{
+  slug: "ai-travel-agent",
+  title: "AI Travel Agent",
+  description:
+    "An AI agent that plans complete itineraries, books hotels, suggests restaurants, and adjusts plans in real time based on weather and budget.",
+  details:
+    "An agentic travel planner that goes beyond a chatbot — it plans complete itineraries, books hotels, suggests restaurants, optimizes routes, and adjusts plans dynamically in response to real-time weather and budget constraints.",
+  category: "AI/ML",
+  tech: ["OpenAI", "Maps API", "Flight APIs", "RAG"],
+  highlights: ["Real-time itinerary adjustment based on weather and budget", "Combines multiple external APIs into one agentic flow"],
+},
+{
+  slug: "ai-personal-tutor",
+  title: "AI Personal Tutor",
+  description:
+    "An AI agent that teaches any topic, quizzes you, tracks weak areas, and generates a personalized learning roadmap.",
+  details:
+    "A tutoring agent that adapts to the learner — it teaches a topic, quizzes on it, tracks weak areas over time, and generates a personalized roadmap for what to study next, with voice interaction built in.",
+  category: "AI/ML",
+  tech: ["LLM", "Memory", "Retrieval", "Voice"],
+  highlights: ["Tracks weak areas across sessions", "Generates a personalized learning roadmap"],
+},
+{
+  slug: "ddos-detection",
+  title: "DDoS Attack Detection",
+  description:
+    "A network intrusion detection pipeline trained on 225,745 real traffic records to classify DDoS attacks vs. benign traffic.",
+  details:
+    "Trained 5 classical ML models plus an ANN on the CIC-DDoS2019 dataset (225,745 rows) to distinguish DDoS traffic from benign traffic, using a reusable train/evaluate function shared across models rather than duplicating pipeline code per model.",
+  category: "AI/ML",
+  tech: ["Python", "Scikit-learn", "TensorFlow/Keras"],
+  highlights: ["Trained on the full 225,745-row dataset, no subsampling", "Reusable model-agnostic training pipeline"],
+},
+{
+  slug: "air-quality-2024",
+  title: "Global Air Quality (2024)",
+  description:
+    "Dual regression + classification models predicting both exact AQI values and AQI category across 6 major world cities.",
+  details:
+    "Built both a regression model (predicting exact AQI) and a classification model (predicting AQI category) on hourly 2024 air quality data across Brasília, Cairo, Dubai, London, New York, and Sydney, with careful feature cleanup (dropping a column that was 82% missing data).",
+  category: "AI/ML",
+  tech: ["Python", "Pandas", "Scikit-learn"],
+  highlights: ["Dual regression + classification approach on the same dataset", "Hourly data across 6 cities on 3 continents"],
+},
+{
+  slug: "extrovert-introvert-behavior",
+  title: "Extrovert vs. Introvert Behavior Classifier",
+  description:
+    "A classification pipeline predicting personality tendencies from behavioral data, comparing 5 classical models against an ANN.",
+  details:
+    "Trained 5 classical ML models and a neural network on behavioral data to classify extrovert vs. introvert tendencies, following the same reusable evaluation pattern used across the ML project series for consistent, comparable metrics.",
+  category: "AI/ML",
+  tech: ["Python", "Scikit-learn", "TensorFlow/Keras"],
+  highlights: ["5 classical models benchmarked against an ANN", "Consistent evaluation pipeline shared across projects"],
+},
 ];
 
 export const testimonials: Testimonial[] = [
