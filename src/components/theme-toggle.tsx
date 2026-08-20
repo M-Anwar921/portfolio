@@ -12,7 +12,7 @@ export function ThemeToggle() {
   React.useEffect(() => setMounted(true), []);
 
   if (!mounted) {
-    return <div className="h-20 w-20" aria-hidden />;
+    return <div className="h-7 w-7" aria-hidden />;
   }
 
   return (
@@ -23,9 +23,9 @@ export function ThemeToggle() {
       onClick={() => setTheme(resolvedTheme === "dark" ? "light" : "dark")}
     >
       {resolvedTheme === "dark" ? (
-        <Sun className="h-5 w-5" />
+        <Sun className="h-7 w-7" />
       ) : (
-        <Moon className="h-5 w-5" />
+        <Moon className="h-7 w-7" />
       )}
     </Button>
   );

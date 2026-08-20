@@ -1,6 +1,7 @@
 "use client";
 
 import * as React from "react";
+import { PortfolioChat } from "@/components/portfolio-chat";
 import { motion } from "framer-motion";
 import { ArrowRight, Download, Mail } from "lucide-react";
 import { Button, buttonVariants } from "@/components/ui/button";
@@ -51,9 +52,20 @@ function TypingRole() {
   );
 }
 
+type Particle = {
+  id: number;
+  size: number;
+  left: number;
+  top: number;
+  duration: number;
+  delay: number;
+};
+
 function FloatingParticles() {
-  const particles = React.useMemo(
-    () =>
+  const [particles, setParticles] = React.useState<Particle[]>([]);
+
+  React.useEffect(() => {
+    setParticles(
       Array.from({ length: 18 }).map((_, i) => ({
         id: i,
         size: 3 + Math.random() * 5,
@@ -61,9 +73,9 @@ function FloatingParticles() {
         top: Math.random() * 100,
         duration: 5 + Math.random() * 6,
         delay: Math.random() * 4,
-      })),
-    []
-  );
+      }))
+    );
+  }, []);
 
   return (
     <div className="pointer-events-none absolute inset-0 overflow-hidden" aria-hidden>
@@ -214,6 +226,7 @@ export function Hero() {
         >
           <AIOrbitIllustration />
         </motion.div>
+        <PortfolioChat />
       </div>
     </section>
   );

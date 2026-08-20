@@ -58,7 +58,7 @@ export function Navbar() {
            aria-label="GitHub"
            className="text-muted-foreground transition-colors hover:text-foreground"
           >
-          <Github className="h-5 w-5" />
+          <Github className="h-7 w-7" />
           </a>
           <a
            href={siteConfig.linkedin}
@@ -67,10 +67,10 @@ export function Navbar() {
            aria-label="LinkedIn"
            className="text-muted-foreground transition-colors hover:text-foreground"
           >
-           <Linkedin className="h-5 w-5" />
+           <Linkedin className="h-7 w-7" />
            </a>
           <ThemeToggle />
-          <Button size="sm" onClick={() => (window.location.hash = "#contact")}>
+          <Button size="lg" onClick={() => (window.location.hash = "#contact")}>
            Contact Me
           </Button>
         </div>
